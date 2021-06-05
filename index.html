@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <title>Html5Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card m-4">
+            <div class="card-header">
+                <h1 class="font-weight-bold">Payment form example</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="card">Card #</label>
+                            <input type="text" class="form-control" placeholder="XXXXXXXXX">
+                        </div>
+                        <div class="col">
+                            <label for="CVC">CVC #</label>
+                            <input type="text" class="form-control" placeholder="000">
+                        </div>
+                        <div class="col">
+                            <label for="Amount">Amount</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">$</div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Amount">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="FirstName">First Name</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="LastName">Last Name</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="City">City</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col md-3">
+                            <label for="State">State</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Pick a state</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="PostalCode">Postal Code</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-6 mr-3">
+                    We accept:
+                        <div class="card-body bg-secondary text-white rounded p-1 mt-3" style="width : 228px;" >
+                            <div class="form-check form-check-inline  ml-1">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="fa fa-cc-amex">
+                                <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="fa fa-cc-mastercard">
+                                <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="fa fa-cc-discover">
+                                <label class="form-check-label" for="inlineRadio3"><i class="fab fa-paypal"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="fa fa-cc-discover">
+                                <label class="form-check-label" for="inlineRadio4"><i class="fab fa-cc-amex"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col">
+                        <label for="comment">Message</label>
+                            <textarea class="form-control" rows="3" id="comment"></textarea>
+                            <small id="comment" class="form-text text-muted">
+                                Add any notes here
+                            </small>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="card-footer text-right">
+                <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
+                <button type="button" class="btn btn-primary btn-sm">Send</button>
+                
+        </div>
+    </div>
+    
+</body>
+</html>
